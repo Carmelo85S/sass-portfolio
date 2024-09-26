@@ -1,0 +1,10 @@
+@use '_font';
+@import '_header';
+@import '_hero';
+
+body{
+    font-family: font.$main-font;
+}
+
+
+

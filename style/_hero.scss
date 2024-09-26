@@ -1,0 +1,38 @@
+@use 'colors';
+
+.hero__container{
+    max-width: 1109px;
+    width: 100%;
+    min-height: 251px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+
+    &-text{
+        max-width: 635px;
+        width: 100%;
+        min-height: 251px;
+
+        &-title{
+            margin-top:6rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            font-size: 22px;
+            color: colors.$txt-and-button-color;
+        }
+        &-content {
+            font-size: 2.5rem;
+            line-height: 3.75rem;
+
+            span{
+                color: colors.$txt-and-button-color;
+            }
+        }
+    }
+
+    .hero__tagline{
+        margin-bottom: 1.5rem;
+    }
+
+}
