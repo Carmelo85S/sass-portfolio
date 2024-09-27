@@ -1,0 +1,36 @@
+
+.group__container{
+    display: flex;
+    max-width: 1079px;
+    width: 100%;
+    min-height: 106px;
+    margin: auto;
+
+    &-info{
+        max-width: 635px;
+        width: 100%;
+        min-height: 106px;
+    }
+
+    .service__list{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: auto;
+        
+        &-left,
+        &-right{
+            list-style: none;
+            font-size: 18px;
+            font-style: regular;
+        }
+
+        &-right{
+            margin-left: 70px;
+        }
+
+        li{
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.grid__container {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+    max-width: 1110px;
+    width: 100%;
+    min-height: 1960px;
+    margin: 144px auto 91px auto;
+
+    .grid__item{
+        overflow: hidden;
+        max-width: px;
+        width: 100%;
+        height: auto;
+        opacity: 0.8;
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+            opacity: 1;
+            transform: scale(1.03);
+        }
+
+        &-one{
+            grid-area: 1 / 1 / 8 / 4;
+        }
+
+        &-two{
+            grid-area: 8 / 1 / 16 / 4;
+        }
+
+        &-three{
+            grid-area: 16 / 1 / 24 / 4;
+        }
+
+        &-four{
+            grid-area: 24 / 1 / 33 / 4;
+        }
+
+        &-five{
+            grid-area: 1 / 4 / 7 / 7;
+        }
+
+        &-six{
+            grid-area: 7 / 4 / 14 / 7;
+        }
+
+        &-seven{
+            grid-area: 14 / 4 / 23 / 7;
+        }
+
+        &-eight{
+            grid-area: 23 / 4 / 33 / 7;
+        }
+
+        &-nine{
+            grid-area: 1 / 7 / 11 / 10 ;
+        }
+
+        &-ten{
+            grid-area:  11 / 7 / 18 / 10;
+        }
+
+        &-eleven{
+            grid-area:  18 / 7 / 27 / 10;
+        }
+
+        &-twelve{
+            grid-area:  27 / 7 / 33 / 10;
+        }
+    }
+}

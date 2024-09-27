@@ -1,10 +1,27 @@
 @use '_font';
+@use '_colors';
 @import '_header';
 @import '_hero';
+@import '_gallery';
+@import '_group';
 
 body{
     font-family: font.$main-font;
 }
 
+h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: colors.$li-color;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover{
+    color: colors.$hover;
+}
 
 

@@ -19,14 +19,14 @@
             margin-bottom: 2rem;
             font-weight: bold;
             font-size: 22px;
-            color: colors.$txt-and-button-color;
+            color: colors.$txt-hero;
         }
         &-content {
             font-size: 2.5rem;
             line-height: 3.75rem;
 
             span{
-                color: colors.$txt-and-button-color;
+                color: colors.$txt-hero;
             }
         }
     }
@@ -34,5 +34,4 @@
     .hero__tagline{
         margin-bottom: 1.5rem;
     }
-
 }
