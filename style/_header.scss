@@ -1,14 +1,12 @@
-$hover:#4A4FF2;
-
 .nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1109px;
     width: 100%;
-    min-height: 23px;
-    margin: auto;
-    margin-top: 60px;
+    min-height: 60px;
+    margin: auto;     
+
 
     &__logo {
         max-width: 90px;
@@ -33,7 +31,7 @@ $hover:#4A4FF2;
                 transition: color 0.3s ease-in-out;
 
                 &:hover {
-                    color: $hover;
+                    color: colors.$hover;
                 }
             }
         }

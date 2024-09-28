@@ -1,0 +1,70 @@
+@use '_font';
+@use '_colors';
+@use 'opacity';
+
+.m48rem{
+    margin-left:4.8rem;
+}
+
+.m54rem{
+    margin-left:5.4rem;
+}
+
+.m25rem{
+    margin-left:2.5rem;
+}
+
+.m61rem{
+    margin-left: 6.1rem;
+}
+
+.m6rem{
+    margin-left: 6rem;
+}
+
+.hero__container {
+    max-width: 1110px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    margin-top: 100px;
+
+    &-text {
+        max-width: 645px;
+        width: 100%;
+        margin-right: 140px;
+    }
+
+    &-text-title {
+        max-width: 475px;
+        width: 100%;
+        color: colors.$h1-color;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 55px;
+    }
+
+    &-info {
+        font-size: 16px;
+        line-height: 26px;
+        color: colors.$p-color;
+        margin-top: 20px;
+    }
+
+    &-details {
+        max-width: 335px;
+        width: 100%;
+        min-height: 343px;
+
+       .detail{
+        display:flex;
+        align-items: baseline;
+        border-bottom: 1px solid #979797;
+
+        &-category{
+            opacity: opacity.$opacity-05;
+        }
+       }
+    }
+}

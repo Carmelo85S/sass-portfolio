@@ -1,11 +1,10 @@
 @use '_font';
 @use '_colors';
 @import '_header';
-@import '_hero';
-@import '_gallery';
-@import '_group';
-@import '_awards';
+@import '_hero-project';
+@import '_content';
 @import '_footer';
+
 
 body{
     font-family: font.$main-font;
@@ -15,13 +14,18 @@ body{
     padding-top: 60px;
 }
 
+h1{
+    font-size: 40px;
+    line-height: 55px;
+}
+
 h2{
     font-size: 28px;
     font-weight: bold;
 }
 
 h3{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
 }
 

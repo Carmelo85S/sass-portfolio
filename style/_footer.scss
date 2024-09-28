@@ -1,0 +1,29 @@
+.footer__container{
+    max-width: 1110px;
+    width: 100%;
+    min-height: 23px;
+    margin: auto;
+    margin-top: 114px;
+    margin-bottom: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 95px;
+    gap:30px;
+}
+
+.icons{
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons:hover{
+    transform: scale(1.1);
+}

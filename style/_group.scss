@@ -12,11 +12,16 @@
         min-height: 106px;
     }
 
+    .group-text{
+        line-height: 38px;
+    }
+
     .service__list{
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
         margin: auto;
+
         
         &-left,
         &-right{
@@ -29,7 +34,8 @@
             margin-left: 70px;
         }
 
-        li{
+        .list-item{
+            opacity: 0.6;
             margin-bottom: 10px;
         }
     }
