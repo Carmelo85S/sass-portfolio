@@ -1,10 +1,8 @@
 @use '_font';
 @use '_colors';
 @import '_header';
-@import '_hero-project';
-@import '_content';
+@import '_hero-contact';
 @import '_footer';
-
 
 body{
     font-family: font.$main-font;

@@ -1,3 +1,15 @@
+@use '_colors';
+
+a{
+    text-decoration: none;
+    color: colors.$li-color;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover{
+    color: colors.$hover;
+}
+
 .footer__container{
     max-width: 1110px;
     width: 100%;
@@ -27,3 +39,4 @@
 .icons:hover{
     transform: scale(1.1);
 }
+
