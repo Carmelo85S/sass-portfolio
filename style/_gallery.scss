@@ -1,3 +1,22 @@
+@mixin slide-in-to-top {
+    @keyframes slide-in-to-top {
+        0% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+
+        50%{
+            transform: translateY(75%);
+            opacity: 0.4;
+        }
+
+        100% {
+            transform: translateY(0%);
+            opacity: 0.8;
+        }
+    }
+}
+
 .grid__container {
     display: grid;
     justify-content: space-around;
@@ -7,14 +26,16 @@
     width: 100%;
     min-height: 1960px;
     margin: 144px auto 91px auto;
+    animation: slide-in-to-top 1s ease-in-out;
+    @include slide-in-to-top;
 
     .grid__item{
         overflow: hidden;
-        max-width: px;
         width: 100%;
         height: auto;
         opacity: 0.8;
         transition: 0.3s ease-in-out;
+
 
         &:hover{
             opacity: 1;

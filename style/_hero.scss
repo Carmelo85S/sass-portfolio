@@ -1,37 +1,73 @@
 @use 'colors';
 
-.hero__container{
+@mixin slide-in-to-right {
+    @keyframes slide-in-to-right {
+        0% {
+            transform: translateX(-100%); 
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+@mixin opacity {
+    @keyframes opacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.hero__container {
     max-width: 1109px;
     width: 100%;
     min-height: 251px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin: auto;
+    position: relative;
 
-    &-text{
+    &-text {
         max-width: 635px;
         width: 100%;
         min-height: 251px;
+        position: relative;
+        transform: translateX(-100%);
+        opacity: 0;
+        animation: slide-in-to-right 1s ease-out forwards;
 
-        &-title{
-            margin-top:6rem;
+        &-title {
+            margin-top: 6rem;
             margin-bottom: 2rem;
             font-weight: bold;
             font-size: 22px;
             color: colors.$txt-hero;
         }
+
         &-content {
             font-size: 40px;
             line-height: 60px;
 
-            span{
+            span {
                 color: colors.$txt-hero;
             }
         }
     }
 
-    .hero__tagline{
+    .hero__tagline {
         margin-bottom: 1.5rem;
+        animation: opacity 1.5s ease-in;
+        @include opacity()
     }
 }
+
+@include slide-in-to-right();
+
+

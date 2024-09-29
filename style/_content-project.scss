@@ -1,12 +1,25 @@
 @use '_colors';
 @use '_opacity';
 
+@mixin fade-in {
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
 .content_container{
     max-width: 1110px;
     width:100%;
     min-height: 1243px;
     margin: auto;
     margin-top: 62px;
+    animation: fade-in 1.5s ease-in-out;
+    @include fade-in;
 
     .info{
         max-width: 1109px;
@@ -21,5 +34,14 @@
     .image{
         display: flex;
         justify-content: space-between;
+        
+        
+        &-item{
+        opacity:0.95;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
     }
 }
