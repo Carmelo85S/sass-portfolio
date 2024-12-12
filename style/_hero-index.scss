@@ -65,7 +65,11 @@
     .hero__tagline {
         margin-bottom: 1.5rem;
         animation: opacity 1.5s ease-in;
-        @include opacity()
+        @include opacity();
+
+        i{
+            color: rgb(158, 158, 158);
+        }
     }
 }
 
