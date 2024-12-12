@@ -31,8 +31,9 @@
 
     .grid__item{
         overflow: hidden;
+        max-width: 100%;
+        min-height: auto;
         width: 100%;
-        height: auto;
         opacity: 0.8;
         transition: 0.3s ease-in-out;
 
