@@ -31,6 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
     margin: auto;
     position: relative;
 
@@ -69,5 +70,3 @@
 }
 
 @include slide-in-to-right();
-
-
